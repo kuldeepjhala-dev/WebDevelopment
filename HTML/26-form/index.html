@@ -4,36 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 
 <body>
-    <form action="">
-        <input type="text" name="" id="" placeholder="This is placeholder">
+    <form action="/server">
+        <label>
+            text
+            <input type="text" name="username" id="" placeholder="This is placeholder">
+            <!--'name' attribute like key:value pair where the value is data that user writes in inputfield which will be sent to the /action in url-->
+        </label>
+
         <br>
-        <input type="number" name="" id="">
+        <label>
+            number
+            <input type="number" name="number" id="" placeholder="enter no">
+        </label>
         <br>
-        <input type="password" name="" id="">
+        <label>
+            password
+            <input type="password" name="password" id="" placeholder="enter password">
+        </label>
         <br>
-        <input type="date" name="" id="">
+        <label>
+            date
+            <input type="date" name="date" id="">
+        </label>
         <br>
-        <input type="color" name="" id="">
+        <label for="clr">color</label>
+        <input type="color" name="color" id="clr">
         <br>
-        <input type="email" name="" id="">
+        <label for="ee">Email</label> <!-- value of 'for' will be the id of input tag -->
+        <input type="email" name="email" id="ee">
         <br>
-        <input type="radio" name="" id="">
+        <label for="rad1">radio1</label>
+        <input type="radio" name="sameRadio" id="rad1" value="radio1data">
+        <!--Here you can see that in all 3 radio button the name='sameRadio' which is used to group them. So only 1 on them will be selected from 3 of them.-->
+        <!--To pass data of any one we use the 'value' tag in the radio button to pass data of selected radio button-->
+        <!--If radio is checked then in url it will pass 'radio1=on' and if it is not checke then it will pass nothing-->
         <br>
-        <input type="checkbox" name="" id="">
+        <label for="rad2">radio2</label>
+        <input type="radio" name="sameRadio" id="rad2" value="radio2data">
         <br>
-        <input type="range" name="" id="">
+        <label for="rad3">radio3</label>
+        <input type="radio" name="sameRadio" id="rad3" value="radio3data">
+        <!--we can use the same conept to keep the name attribute same in all input type radio and checkbox inorder to group them and only select single one. And to pass data we use value attribute -->
         <br>
-        <input type="time" name="" id="">
+        <label for="check">checkbox</label>
+        <input type="checkbox" name="checkbox" id="check" checked>
+        <!--If checkbox is checked then in url it will pass 'checkbox=on' and if it is not checke then it will pass nothing-->
         <br>
-        <input type="search" name="" id="">
+        <label for="rng"></label>
+        <input type="range" name="range" id="rng" min="0" max="10" value="3">
+        <!--min and max define the value range and 'value=3' means by default it will be selected but you can change-->
         <br>
-        <input type="reset" name="" id="">
+        <label for="tme">time</label>
+        <input type="time" name="time" id="tme">
+        <br>
+        <label for="srch">search</label>
+        <input type="search" name="search" id="srch" placeholder="search here">
+        <br>
+        <label for="idDropdown">dropdown</label>
+        <select name="dropdown" id="idDropdown">
+            <option>Select your option from dropdown</option>
+            <option value="student">Student-1</option>
+            <option value="dev" selected>developer</option>
+        </select>
+        <br>
+        <label for="txtar">textarea</label>
+        <textarea name="textArea" id="txtar" cols="10" rows="4" placeholder="enter text here"></textarea>
+        <br>
+        <label for="rst">Reset</label>
+        <input type="reset" name="reset" id="rst">
+        <br>
+        <button>default submit</button>
+        <!--By default if we define any button in form then it will work as a 'submit' button, but if we define type then it will work according to the type-->
+        <button type="button">Type button</button>
+        <button type="reset">Type reset</button>
+        <button type="submit">Type submit</button>
+        <br>
+        <!--We can create button using 'input' field also. But we should not create button usign input tag-->
+        <input type="button" value="Type button">
+        <input type="reset" value="Type reset">
+        <input type="submit" value="Type submit">
         <br>
     </form>
+
+    <h1>
+        youtube search Form
+    </h1>
+    <form action="https://www.youtube.com/results">
+        <label for="search">Youtube search</label>
+        <input type="text" name="search_query" id="search">
+        <button type="submit">search on youtube</button>
+    </form>
+
+    <h1>
+        google search Form
+    </h1>
+    <form action="https://www.google.com/search">
+        <label for="search">Google Search</label>
+        <input type="text" name="q" id="search">
+        <button type="submit">search on google</button>
+    </form>
+
 </body>
 
 </html>
