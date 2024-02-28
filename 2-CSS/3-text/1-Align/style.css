@@ -1,0 +1,19 @@
+h1 {
+    text-align: start;
+}
+
+h2 {
+    text-align: end;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: left;
+}
+
+h5 {
+    text-align: justify;
+}
