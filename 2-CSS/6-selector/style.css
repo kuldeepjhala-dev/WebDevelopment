@@ -1,0 +1,119 @@
+/* PRIORITY TO ELEMENT */
+
+/* 
+!important > inline-css > id > class > element  (specificity)
+and if specificity is same the cascading(who comes at last) is checked 
+*/
+
+* {
+    font-family: 'Courier New';
+}
+
+body {
+    background-color: whitesmoke !important;
+}
+
+h1,
+h3 {
+    color: #b92b27;
+}
+
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {
+    background-color: rgb(14, 54, 4);
+    color: white;
+}
+
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li,
+nav a {
+    color: hotpink;
+}
+
+p+h3 {
+    text-decoration: underline;
+}
+
+.upvote+button {
+    background-color: rgb(43, 89, 196);
+    color: white;
+}
+
+div>input {
+    background-color: darksalmon;
+}
+
+input[type] {
+    font-weight: 900;
+}
+
+input[type="text"] {
+    color: green;
+}
+
+input[type="password"] {
+    color: red;
+}
+
+div[id="myid"] p {
+    color: green;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+#signup:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: overline;
+}
+
+button:active {
+    background-color: crimson;
+}
+
+p:active {
+    font-weight: bold;
+    color: green;
+}
+
+input[type="radio"]:checked+label {
+    color: red;
+    font-weight: bold;
+}
+
+.nth:nth-of-type(2n) {
+    background-color: blanchedalmond;
+}
+
+h1::first-letter {
+    color: coral;
+}
+
+.para::first-line {
+    color: brown;
+    font-weight: bold;
+}
+
+.para::selection {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
