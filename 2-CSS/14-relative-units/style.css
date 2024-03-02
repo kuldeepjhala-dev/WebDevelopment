@@ -1,0 +1,49 @@
+h1 {
+    border: 2px solid black;
+    width: 33.33%;
+}
+
+#outer {
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin: 50px;
+}
+
+#inner {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin: 10%;
+    /*  here the 10%'s value will be of the parent's width which is 400px so here the margin will be 40px */
+}
+
+#outer2 {
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin: 50px;
+    font-size: 20px;
+}
+
+#inner2 {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin: 10%;
+    font-size: 1em;
+    /* here the outer div font size if 20px, but inner div dont size will be 40px because of '2em'*/
+    padding: 1em;
+    /*same here 1em means 20px wrt font-size of parent which is 20px*/
+}
+
+#btn {
+    font-size: 20px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding-left: 1em;
+    /* We have used em in padding because as if the fontsize change then the padding will be also changed  */
+    padding-right: 1em;
+    background-color: blanchedalmond;
+}
+
