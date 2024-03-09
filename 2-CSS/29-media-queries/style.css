@@ -1,0 +1,54 @@
+h1 {
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+
+
+@media (width: 400px) {
+    h1 {
+        background-color: red;
+        color: black;
+    }
+
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+}
+
+@media (min-width: 400px) {
+    h1 {
+        background-color: blueviolet;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        background-color: green;
+    }
+}
+
+@media (min-width: 200px) and (max-width:300px) {
+    p {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        color: brown;
+    }
+}
+
+@media (orientation: landscape) {
+    div {
+        background-color: yellow;
+    }
+
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: coral;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,80 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* animation-name: widthAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* animation: colorAnimate 2s ease-out 2s infinite alternate; */
+
+    animation: combineAllAboveAnimation 2s ease-in 2s infinite alternate;
+}
+
+.box2 {
+    height: 100px;
+    width: 200px;
+    animation: colorChangePrecentageAnimation 2s ease-in 2s infinite alternate;
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+
+    to {
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimate {
+    from {
+        background-color: green;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+@keyframes widthAnimate {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+@keyframes combineAllAboveAnimation {
+    from {
+        font-size: 20px;
+        background-color: green;
+        width: 10px;
+    }
+
+    to {
+        font-size: 40px;
+        background-color: blue;
+        width: 400px;
+    }
+}
+
+@keyframes colorChangePrecentageAnimation {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}

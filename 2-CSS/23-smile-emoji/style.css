@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#face {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(207, 142, 22);
+}
+
+#lips {
+    height: 40px;
+    width: 100px;
+    margin: 0px auto;
+    background-color: rgb(169, 50, 50);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+}
+
+.eyes {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+}
+
+#left {
+    left: 40px;
+}
+
+#right {
+    left: 115px;
+}

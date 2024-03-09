@@ -1,0 +1,24 @@
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#demo {
+    background-color: rgba(142, 37, 37, 0.611);
+}
+
+#demo1 {
+    background-color: #8c48916b;
+}
+
+#demo2 {
+    background-color: rgb(142, 37, 37);
+    opacity: 0.5;
+}
+
+#demo3 {
+    background-color: rgb(3, 24, 48);
+    opacity: 0;
+}
