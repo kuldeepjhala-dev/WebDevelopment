@@ -274,3 +274,59 @@ a {
     border-radius: 50%;
     background: #1bd760;
 }
+
+.album {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+
+.album img {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 1rem;
+    border-radius: 0.2rem;
+}
+
+.album-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.album-title-heading {
+    /* padding-top: 0.rem; */
+    margin: 0;
+    font-weight: 400;
+}
+
+.album-title-song {
+    /* padding-top: 0.2; */
+    margin-top: 0.2rem;
+    font-weight: 200;
+}
+
+.album i {
+    align-self: center;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.controls input {
+    appearance: none;
+    height: 0.2rem;
+    border-radius: 1rem;
+    margin-top: 0.4rem;
+}
+
+.controls i,
+input {
+    margin-left: 1rem;
+}
