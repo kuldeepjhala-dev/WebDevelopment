@@ -250,3 +250,4 @@ console.log(typeof j); //object
 
 let k;
 console.log(typeof k); //undefined
+
