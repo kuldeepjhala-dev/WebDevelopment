@@ -15,7 +15,7 @@
 //every key in string in json
 //undefined value is invalid in js.
 //it has fixed datatype
-//below is json doc
+//below is json doc.
 //https://www.json.org/json-en.html
 
 //response received from json is in string format.
