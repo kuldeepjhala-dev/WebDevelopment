@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FBF6E0;
+}
+
+img {
+    height: 35px;
+    width: 35px;
+    background-color: #DCBF63;
+    border-radius: 7px;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #04385D;
+    height: 3rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 7px;
+}
+
+.heading {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #DCBF63;
+}
+
+.credentials {
+    align-content: center;
+}
+
+ul {
+    align-items: center;
+}
+
+.credentials ul li {
+    display: inline;
+}
+
+.credentials ul li a img {
+    position: relative;
+    margin: 10px;
+    margin-top: 7px
+}
+
+/* ----------------------------------------------------------------- */
+
+section {
+    background-color: #CCC6B8;
+    position: absolute;
+    text-align: center;
+    margin-top: 4.5rem;
+    border-radius: 10px;
+    width: 40%;
+    justify-content: center;
+    height: auto;
+    left: 30%;
+    padding: 20px;
+}
+
+.counter-value {
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: black
+}
+
+.incr-decr-btns {
+    margin: 10px;
+}
+
+.btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 45px;
+    color: #DCBF63;
+    background-color: #8B123B;
+}
+
+.incr-decr-by {
+    margin-top: 25px;
+    font-size: large;
+    height: auto;
+}
+
+.incr-decr-label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #04385D;
+}
+
+#incr-decr-input {
+    border-radius: 7px;
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.reset-btn {
+    width: 5rem;
+    font-size: 20px;
+    display: block;
+    margin-left: 45%;
+    margin-top: 20px;
+    color: #DCBF63;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+footer {
+    background-color: #04385D;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+    color: #DCBF63;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

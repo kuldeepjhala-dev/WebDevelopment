@@ -1,0 +1,11 @@
+/* using this style in instagram2.ejs */
+
+body {
+    background-color: pink;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
