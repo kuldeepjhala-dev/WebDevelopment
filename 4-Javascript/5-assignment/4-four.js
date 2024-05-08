@@ -15,3 +15,4 @@ else {
     console.log("Not a Golden String");
 }
 
+
