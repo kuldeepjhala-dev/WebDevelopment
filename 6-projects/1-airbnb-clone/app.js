@@ -28,6 +28,11 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
+//Home route
+app.get("/", (req, res) => {
+  res.send("Home route");
+});
+
 //Index Route
 app.get("/listings", async (req, res) => {
   const allListings = await Listing.find({});
