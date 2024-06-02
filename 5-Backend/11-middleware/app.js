@@ -1,16 +1,16 @@
 const express = require("express");
 const app = express();
 
-// app.use((req, res, next) => {
-//   console.log("This is a middleware  - 1");
-//   next();
-//   console.log("Anythig after next() will also be executed");
-// });
+app.use((req, res, next) => {
+  console.log("This is a middleware  - 1");
+  next();
+  console.log("Anythig after next() will also be executed");
+});
 
-// app.use((req, res, next) => {
-//   console.log("This is a middleware  - 2");
-//   next();
-// });
+app.use((req, res, next) => {
+  console.log("This is a middleware  - 2");
+  next();
+});
 
 //In this middleware we have not defined the path. So it will execute on every req
 app.use((req, res, next) => {
@@ -31,17 +31,21 @@ const checkToken = (req, res, next) => {
   if (token === "giveaccess") {
     next();
   } else {
-    throw new Error("ACCESS DENIED!");
+    res.send("ACCESS NOT GRANTED");
   }
 };
+
+app.get("/random", (req, res) => {
+  res.send("This is a random page.");
+});
 
 //variable passed as argument inorder to call the middleware before the (req,res).... function.
 app.get("/api", checkToken, (req, res) => {
   res.send("Data");
 });
 
-app.get("/random", (req, res) => {
-  res.send("This is a random page.");
+app.use((req, res) => {
+  res.status(404).send("page not found!");
 });
 
 app.listen(8080, () => {
